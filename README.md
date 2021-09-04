@@ -16,9 +16,8 @@ flutter pub get
 - Scalable Code 
 - State Management -> Mobx
 
-
-
 ## Routes 
+
 ```bash
 class Routes {
   static const home = "/";
