@@ -18,8 +18,7 @@ flutter pub get
 
 
 
-## Routes 
-
+## Usage -> Routes
 ```bash
 class Routes {
   static const home = "/";
