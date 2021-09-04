@@ -1,5 +1,7 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
+import 'package:shortly_flutter/app/global/routes/routes.dart';
+import 'package:shortly_flutter/core/navigation/navigation_helper.dart';
 
 import 'app/screens/welcome/screens/welcome_screen.dart';
 import 'app/theme/theme/dark_theme.dart';
@@ -11,12 +13,15 @@ class PlatformSensitiveMain extends PlatformSensitiveWidget {
   Widget isAndroid(BuildContext context) {
     return MaterialApp(
       title: 'Shortly',
+      onGenerateRoute: Routes.onGenerateRoutes,
       debugShowCheckedModeBanner: false,
+      navigatorKey: Navigation.navigationKey,
       localizationsDelegates: context.localizationDelegates,
       supportedLocales: context.supportedLocales,
       locale: context.deviceLocale,
       theme: context.lightTheme,
       darkTheme: context.darkTheme,
+      initialRoute: Routes.home,
       home: WelcomeScreen(),
     );
   }
@@ -26,11 +31,13 @@ class PlatformSensitiveMain extends PlatformSensitiveWidget {
     return MaterialApp(
       title: 'Shortly',
       debugShowCheckedModeBanner: false,
+      navigatorKey: Navigation.navigationKey,
       localizationsDelegates: context.localizationDelegates,
       supportedLocales: context.supportedLocales,
       locale: context.deviceLocale,
       theme: context.lightTheme,
       darkTheme: context.darkTheme,
+      initialRoute: Routes.home,
       home: WelcomeScreen(),
     );
   }
@@ -39,12 +46,15 @@ class PlatformSensitiveMain extends PlatformSensitiveWidget {
   Widget isIOS(BuildContext context) {
     return MaterialApp(
       title: 'Shortly',
+      onGenerateRoute: Routes.onGenerateRoutes,
       debugShowCheckedModeBanner: false,
+      navigatorKey: Navigation.navigationKey,
       localizationsDelegates: context.localizationDelegates,
       supportedLocales: context.supportedLocales,
       locale: context.deviceLocale,
       theme: context.lightTheme,
       darkTheme: context.darkTheme,
+      initialRoute: Routes.home,
       home: WelcomeScreen(),
     );
   }
@@ -54,11 +64,13 @@ class PlatformSensitiveMain extends PlatformSensitiveWidget {
     return MaterialApp(
       title: 'Shortly',
       debugShowCheckedModeBanner: false,
+      navigatorKey: Navigation.navigationKey,
       localizationsDelegates: context.localizationDelegates,
       supportedLocales: context.supportedLocales,
       locale: context.deviceLocale,
       theme: context.lightTheme,
       darkTheme: context.darkTheme,
+      initialRoute: Routes.home,
       home: WelcomeScreen(),
     );
   }
@@ -68,11 +80,13 @@ class PlatformSensitiveMain extends PlatformSensitiveWidget {
     return MaterialApp(
       title: 'Shortly',
       debugShowCheckedModeBanner: false,
+      navigatorKey: Navigation.navigationKey,
       localizationsDelegates: context.localizationDelegates,
       supportedLocales: context.supportedLocales,
       locale: context.deviceLocale,
       theme: context.lightTheme,
       darkTheme: context.darkTheme,
+      initialRoute: Routes.home,
       home: WelcomeScreen(),
     );
   }
@@ -82,11 +96,13 @@ class PlatformSensitiveMain extends PlatformSensitiveWidget {
     return MaterialApp(
       title: 'Shortly',
       debugShowCheckedModeBanner: false,
+      navigatorKey: Navigation.navigationKey,
       localizationsDelegates: context.localizationDelegates,
       supportedLocales: context.supportedLocales,
       locale: context.deviceLocale,
       theme: context.lightTheme,
       darkTheme: context.darkTheme,
+      initialRoute: Routes.home,
       home: WelcomeScreen(),
     );
   }
@@ -96,11 +112,13 @@ class PlatformSensitiveMain extends PlatformSensitiveWidget {
     return MaterialApp(
       title: 'Shortly',
       debugShowCheckedModeBanner: false,
+      navigatorKey: Navigation.navigationKey,
       localizationsDelegates: context.localizationDelegates,
       supportedLocales: context.supportedLocales,
       locale: context.deviceLocale,
       theme: context.lightTheme,
       darkTheme: context.darkTheme,
+      initialRoute: Routes.home,
       home: WelcomeScreen(),
     );
   }

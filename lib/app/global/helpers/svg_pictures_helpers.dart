@@ -6,6 +6,7 @@ class SVGPicturesHelper {
     return SvgPicture.asset(
       "assets/images/$svgName.svg",
       fit: BoxFit.cover,
+      alignment: Alignment.topCenter,
     );
   }
 }

@@ -1,33 +1,18 @@
-# Shortly Flutter 
+// ! ROUTES
+import 'package:flutter/material.dart';
+import 'package:shortly_flutter/app/screens/onboard/screens/onboard_screen.dart';
+import 'package:shortly_flutter/app/screens/welcome/screens/welcome_screen.dart';
 
-## installation 
-```bash
-flutter pub get
-```
-
-## Specification
-- Dark Mode
-- Multi Language
-- Responsive 
-- Easy manageable route
-- Core Files
-- Global Components
-- Dependcy Injections - Get It
-- Scalable Code 
-- State Management -> Mobx
-
-## Routes 
-```bash
 class Routes {
   static const home = "/";
-  static const welcome = "/welcome_screem";
+  static const onboard = "/onboard_screen";
 
   static Route<dynamic> onGenerateRoutes(RouteSettings settings) {
     switch (settings.name) {
       case home:
         return _materialPageRoute(WelcomeScreen());
-      case welcome:
-        return _materialPageRoute(WelcomeScreen());
+      case onboard:
+        return _materialPageRoute(OnboardScreen());
 
       default:
         return _materialPageRoute(Text("error"));
@@ -38,5 +23,3 @@ class Routes {
     return MaterialPageRoute<dynamic>(builder: (_) => page);
   }
 }
-```
-

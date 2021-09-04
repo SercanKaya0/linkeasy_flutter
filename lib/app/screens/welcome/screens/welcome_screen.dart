@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:shortly_flutter/app/global/components/appbar_components.dart';
 import 'package:shortly_flutter/app/global/components/elevated_button_components.dart';
 import 'package:shortly_flutter/app/global/helpers/spacer_flex_helper.dart';
 import 'package:shortly_flutter/app/global/helpers/svg_pictures_helpers.dart';
+import 'package:shortly_flutter/app/global/routes/routes.dart';
 import 'package:shortly_flutter/core/localization/widget/locale_text_widget.dart';
+import 'package:shortly_flutter/core/navigation/navigation_helper.dart';
 
 import '../../../global/components/app_logo_image_components.dart';
 import '../../../global/helpers/padding_helpers.dart';
@@ -13,17 +16,15 @@ class WelcomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: SafeArea(
-          child: Container(
+      appBar: AppBarComponents.appBarWidget(),
+      body: Container(
         // * Containere kenarlardan 16px Boşluk verir.
-        padding: PaddingHelpers.instance.horizontalPadding16x,
+        padding: PaddingHelpers.instance.horizontal24Vertical30Padding,
         child: Column(
           children: [
-            // * Uygulama Logosunun Bulunduğu yerdir.
-            Flexible(flex: 2, child: Center(child: AppLogoComponents())),
             // * Global bir component kullanarak gösterilen Welcome Illustrator resmidir. Resim assets->images klasörü içerisindedir.
             Expanded(
-                flex: 15,
+                flex: 20,
                 child: SVGPicturesHelper.getSVGPictureAssets(
                     svgName: "illustration")),
             // * Title açıklaması buradan gelmektedir. -> More Than
@@ -37,7 +38,7 @@ class WelcomeScreen extends StatelessWidget {
             //Spacer(flex: SpacerFlexHelper.instancer.bottomSpacerFlex())
           ],
         ),
-      )),
+      ),
     );
   }
 
@@ -45,7 +46,9 @@ class WelcomeScreen extends StatelessWidget {
   Widget _getStartButtonMethod() {
     return ElevatedButtonsComponent(
       buttonTitle: "welcome.button_start_title",
-      onPressed: () {},
+      onPressed: () {
+        Navigation.pushNamed(root: Routes.onboard);
+      },
     );
   }
 
