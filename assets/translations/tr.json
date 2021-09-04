@@ -1,15 +1,11 @@
- {
-  "welcome" : {
-    "title": "Let's get started!",
-    "description": "Paste your first link into the field to shorten it",
-    "button_please_add_link_text" : "Please add a link here",
-    "button_shortten_it" : "SHORTTEN IT!"
-  } ,
-  "url_short" : {
-      "copy_button_text" : "COPY",
-      "copied_button_text" : "COPIED!"
-
+{
+  "welcome": {
+    "title": "More than just shorter links",
+    "description": "Build your brand's recognition and get detailed insights on how your links are performing",
+    "button_start_title": "START"
+  },
+  "url_short": {
+    "copy_button_text": "COPY",
+    "copied_button_text": "COPIED!"
   }
-  
-  
- }
+}
