@@ -17,7 +17,7 @@ class TranslationText extends StatelessWidget {
     return AutoSizeText(
       text.locale,
       maxLines: maxLines ?? 5,
-      maxFontSize: 100,
+      maxFontSize: 30,
       minFontSize: 14,
       style: style,
       textAlign: textAlign ?? TextAlign.start,

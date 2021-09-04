@@ -13,6 +13,7 @@ extension LightTheme on BuildContext {
         scaffoldBackgroundColor: ThemeColorsModel.instance.backgroundColorLIGHT,
         textTheme: TextTheme(
             headline1: TextStyleThemeLight.instance.headline1,
+            headline2: TextStyleThemeLight.instance.headline2,
             subtitle1: TextStyleThemeLight.instance.subtitle1),
         textButtonTheme: TextButtonThemeData(
             style: ButtonStyleThemeLight.instance.textButtonStyle),

@@ -1,5 +1,7 @@
+import 'package:flutter/material.dart';
+
 class OnboardScreenModel {
-  String? image;
+  IconData? image;
   String? title;
   String? description;
   OnboardScreenModel(

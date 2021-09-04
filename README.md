@@ -1,10 +1,5 @@
 # Shortly Flutter 
 
-## installation 
-```bash
-flutter pub get
-```
-
 ## Specification
 - Dark Mode
 - Multi Language
@@ -15,6 +10,13 @@ flutter pub get
 - Dependcy Injections - Get It
 - Scalable Code 
 - State Management -> Mobx
+
+## installation 
+```bash
+flutter pub get
+```
+
+
 
 ## Routes 
 

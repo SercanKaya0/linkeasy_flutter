@@ -13,7 +13,9 @@ extension DarkTheme on BuildContext {
         scaffoldBackgroundColor: ThemeColorsModel.instance.backgroundColorDARK,
         textTheme: TextTheme(
             headline1: TextStyleThemeDark.instance.headline1,
+            headline2: TextStyleThemeDark.instance.headline2,
             subtitle1: TextStyleThemeDark.instance.subtitle1),
-            textButtonTheme: TextButtonThemeData(style: ButtonStyleThemeDark.instance.textButtonStyle),
+        textButtonTheme: TextButtonThemeData(
+            style: ButtonStyleThemeDark.instance.textButtonStyle),
       );
 }

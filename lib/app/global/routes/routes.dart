@@ -6,12 +6,18 @@ import 'package:shortly_flutter/app/screens/welcome/screens/welcome_screen.dart'
 class Routes {
   static const home = "/";
   static const onboard = "/onboard_screen";
+  static const url_shorter = "/url_shorter_screen";
+  static const search_history = "/search_history_screen";
 
   static Route<dynamic> onGenerateRoutes(RouteSettings settings) {
     switch (settings.name) {
       case home:
         return _materialPageRoute(WelcomeScreen());
       case onboard:
+        return _materialPageRoute(OnboardScreen());
+      case url_shorter:
+        return _materialPageRoute(OnboardScreen());
+      case search_history:
         return _materialPageRoute(OnboardScreen());
 
       default:

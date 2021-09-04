@@ -5,6 +5,12 @@
     "button_start_title": "START"
   },
   "onboard": {
-    "skip_button_text": "Skip"
+    "skip_button_text": "Skip",
+    "title_1": "Brand Recognation",
+    "title_2": "Detailed Records",
+    "title_3": "Fully Customizable",
+    "description_1": "Boos your brand recognition with each click. Genereci links don't mean a thing. Branded links help instil confidence in your content.",
+    "description_2": "Gain insights into who is clicking your links. Knowing when and where people engage with your content helps inform better decisions",
+    "description_3": "Improve brand awareness and content discoverability through customizable links, supercharging audience engagement"
   }
 }
