@@ -1,0 +1,8 @@
+import 'package:flutter/material.dart';
+
+class TextStyleThemeLight {
+  static final TextStyleThemeLight instance = TextStyleThemeLight();
+  TextStyle? headline1 =
+      TextStyle(fontWeight: FontWeight.w800, color: Colors.black, fontSize: 20);
+  TextStyle? subtitle1 = TextStyle(color: Colors.black, fontSize: 20);
+}
