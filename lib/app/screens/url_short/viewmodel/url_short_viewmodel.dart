@@ -25,12 +25,12 @@ abstract class _URLShotViewModelBase with Store {
   Future<void> urlShortenPost(String? shortURL) async {
     isLoadingScreen = true;
     await Future.delayed(Duration(milliseconds: 1500));
-    final response =
-        await iurlShortRepository.shortenURL({"url": shortURL});
+    final response = await iurlShortRepository.shortenURL({"url": shortURL});
     response.when(success: (data) async {
       await iurlShortRepository.saveHiveURLHistory(
           data: URLHistoryHiveModel(
         code: data.result!.code,
+        copiedButton: false,
         fullShareLink: data.result!.fullShareLink,
         fullShortLink2: data.result!.fullShortLink2,
         fullShortLink3: data.result!.fullShortLink3,

@@ -1,9 +1,12 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_mobx/flutter_mobx.dart';
 import 'package:hive/hive.dart';
 import 'package:shortly_flutter/app/global/components/elevated_button_components.dart';
 import 'package:shortly_flutter/app/global/get_it/get_it.dart';
 import 'package:shortly_flutter/app/global/helpers/padding_helpers.dart';
+import 'package:flutter/services.dart';
+
 import 'package:hive_flutter/hive_flutter.dart';
 import 'package:shortly_flutter/app/screens/url_short_history/model/url_history_hive_model.dart';
 import 'package:shortly_flutter/app/screens/url_short_history/screens/widgets/url_history_list_cell_widget.dart';
@@ -55,10 +58,9 @@ class URLHistoryScreen extends StatelessWidget {
             children: [
               URLHistoryListViewCell(
                 onPressed: () async {
-                  print(index);
                   await _urlHistoryViewModel.deleteURLHistoryHive(index);
                 },
-                urlLink: data[index].originalLink,
+                urlLink: data[index].originalLink ?? "",
               ),
               Container(
                 padding:
@@ -74,8 +76,21 @@ class URLHistoryScreen extends StatelessWidget {
                       ),
                     ),
                     ElevatedButtonsComponent(
-                      onPressed: () async {},
-                      buttonTitle: "url_short_history.copy_button",
+                      backgroundColor:
+                          _urlHistoryViewModel.copyButtonBackgroundColorControl(
+                              data[index].copiedButton ?? false),
+                      onPressed: () async {
+                        await Clipboard.setData(
+                                ClipboardData(text: data[index].fullShareLink))
+                            .then((value) {
+                          ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+                              content: Text(data[index].fullShareLink ?? "")));
+                        });
+                        await _urlHistoryViewModel.setUpdateCopiedButton(index,
+                            data: data[index]);
+                      },
+                      buttonTitle: _urlHistoryViewModel.copyButtonTitleControl(
+                          data[index].copiedButton ?? false),
                       buttonHeight: 0.05,
                     ),
                   ],

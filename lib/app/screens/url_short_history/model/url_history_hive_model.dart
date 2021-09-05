@@ -23,6 +23,8 @@ class URLHistoryHiveModel {
   String? fullShareLink;
   @HiveField(10)
   String? originalLink;
+  @HiveField(11)
+  bool? copiedButton;
   URLHistoryHiveModel(
       {this.code,
       this.fullShareLink,
@@ -31,6 +33,7 @@ class URLHistoryHiveModel {
       this.fullShortLink3,
       this.originalLink,
       this.shareLink,
+      this.copiedButton,
       this.shortLink,
       this.shortLink2,
       this.shortLink3});

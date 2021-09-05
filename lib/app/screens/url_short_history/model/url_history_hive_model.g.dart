@@ -24,6 +24,7 @@ class URLHistoryHiveModelAdapter extends TypeAdapter<URLHistoryHiveModel> {
       fullShortLink3: fields[7] as String?,
       originalLink: fields[10] as String?,
       shareLink: fields[8] as String?,
+      copiedButton: fields[11] as bool?,
       shortLink: fields[2] as String?,
       shortLink2: fields[4] as String?,
       shortLink3: fields[6] as String?,
@@ -33,7 +34,7 @@ class URLHistoryHiveModelAdapter extends TypeAdapter<URLHistoryHiveModel> {
   @override
   void write(BinaryWriter writer, URLHistoryHiveModel obj) {
     writer
-      ..writeByte(10)
+      ..writeByte(11)
       ..writeByte(1)
       ..write(obj.code)
       ..writeByte(2)
@@ -53,7 +54,9 @@ class URLHistoryHiveModelAdapter extends TypeAdapter<URLHistoryHiveModel> {
       ..writeByte(9)
       ..write(obj.fullShareLink)
       ..writeByte(10)
-      ..write(obj.originalLink);
+      ..write(obj.originalLink)
+      ..writeByte(11)
+      ..write(obj.copiedButton);
   }
 
   @override

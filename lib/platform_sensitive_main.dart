@@ -30,6 +30,7 @@ class PlatformSensitiveMain extends PlatformSensitiveWidget {
   Widget isFuchsia(BuildContext context) {
     return MaterialApp(
       title: 'Shortly',
+      onGenerateRoute: Routes.onGenerateRoutes,
       debugShowCheckedModeBanner: false,
       navigatorKey: Navigation.navigationKey,
       localizationsDelegates: context.localizationDelegates,
@@ -63,6 +64,7 @@ class PlatformSensitiveMain extends PlatformSensitiveWidget {
   Widget isLinux(BuildContext context) {
     return MaterialApp(
       title: 'Shortly',
+      onGenerateRoute: Routes.onGenerateRoutes,
       debugShowCheckedModeBanner: false,
       navigatorKey: Navigation.navigationKey,
       localizationsDelegates: context.localizationDelegates,
@@ -79,6 +81,7 @@ class PlatformSensitiveMain extends PlatformSensitiveWidget {
   Widget isMacOS(BuildContext context) {
     return MaterialApp(
       title: 'Shortly',
+      onGenerateRoute: Routes.onGenerateRoutes,
       debugShowCheckedModeBanner: false,
       navigatorKey: Navigation.navigationKey,
       localizationsDelegates: context.localizationDelegates,
@@ -95,6 +98,7 @@ class PlatformSensitiveMain extends PlatformSensitiveWidget {
   Widget isWeb(BuildContext context) {
     return MaterialApp(
       title: 'Shortly',
+      onGenerateRoute: Routes.onGenerateRoutes,
       debugShowCheckedModeBanner: false,
       navigatorKey: Navigation.navigationKey,
       localizationsDelegates: context.localizationDelegates,
@@ -111,6 +115,7 @@ class PlatformSensitiveMain extends PlatformSensitiveWidget {
   Widget isWindows(BuildContext context) {
     return MaterialApp(
       title: 'Shortly',
+      onGenerateRoute: Routes.onGenerateRoutes,
       debugShowCheckedModeBanner: false,
       navigatorKey: Navigation.navigationKey,
       localizationsDelegates: context.localizationDelegates,
