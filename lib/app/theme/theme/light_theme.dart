@@ -17,6 +17,7 @@ extension LightTheme on BuildContext {
         textTheme: TextTheme(
             headline1: TextStyleThemeLight.instance.headline1,
             headline2: TextStyleThemeLight.instance.headline2,
+            headline3: TextStyleThemeLight.instance.headline3,
             subtitle1: TextStyleThemeLight.instance.subtitle1),
         textButtonTheme: TextButtonThemeData(
             style: ButtonStyleThemeLight.instance.textButtonStyle),

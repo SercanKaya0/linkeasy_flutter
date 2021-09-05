@@ -2,8 +2,6 @@
 import 'package:flutter/material.dart';
 import 'package:shortly_flutter/app/screens/home_page/screen/homepage_screen.dart';
 import 'package:shortly_flutter/app/screens/onboard/screens/onboard_screen.dart';
-import 'package:shortly_flutter/app/screens/url_short/screens/url_short_screen.dart';
-
 import 'package:shortly_flutter/app/screens/welcome/screens/welcome_screen.dart';
 
 class Routes {

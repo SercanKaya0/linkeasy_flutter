@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 
 import '../helpers/svg_pictures_helpers.dart';
 
+
+// * Uygulama boyunca gösterilen logonun geldiği widgettır.
 class AppLogoComponents extends StatelessWidget {
   const AppLogoComponents({Key? key}) : super(key: key);
 

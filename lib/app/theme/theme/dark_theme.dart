@@ -17,6 +17,8 @@ extension DarkTheme on BuildContext {
         textTheme: TextTheme(
             headline1: TextStyleThemeDark.instance.headline1,
             headline2: TextStyleThemeDark.instance.headline2,
+            headline3: TextStyleThemeDark.instance.headline3,
+
             subtitle1: TextStyleThemeDark.instance.subtitle1),
         textButtonTheme: TextButtonThemeData(
             style: ButtonStyleThemeDark.instance.textButtonStyle),

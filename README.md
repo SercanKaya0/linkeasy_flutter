@@ -18,8 +18,10 @@ flutter pub get
 
 ## Usage -> Core
 ```bash
+
 ## Localiztaion
-It is a file that can be moved to the folder of the desired application and localized. The easy_localization package is used, and after the necessary settings are made, it is sufficient to wrap the text to be translated with the widget in the folder.
+
+ 'It is a file that can be moved to the folder of the desired application and localized. The easy_localization package is used, and after the necessary settings are made, it is sufficient to wrap the text to be translated with the widget in the folder.'
 
 Example:
   TranslationText(text: "home.title"),
@@ -28,8 +30,11 @@ Navigasyon işlemlerini kolay hale getiren ve uygulama farketmeksizin kullanıla
 
 Example :
        Navigation.pushNamed(root: Routes.onboard);
+
 ## platform_design
-It is the build that runs the builder based on the platform type.
+
+'It is the build that runs the builder based on the platform type.'
+
 Example : 
 
 class PlatformSensitiveMain extends PlatformSensitiveWidget {

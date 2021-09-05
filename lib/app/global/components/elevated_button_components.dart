@@ -10,14 +10,20 @@ class ElevatedButtonsComponent extends StatelessWidget {
       required this.onPressed,
       this.backgroundColor,
       required this.buttonTitle,
-      this.side})
+      this.fontSize,
+      this.fontWeight,
+      this.side,
+      this.textColor})
       : super(key: key);
   final double? buttonWidth;
   final double? buttonHeight;
+  final Color? textColor;
+  final FontWeight? fontWeight;
   final void Function()? onPressed;
   final MaterialStateProperty<BorderSide?>? side;
   final Color? backgroundColor;
   final String buttonTitle;
+  final double? fontSize;
 
   @override
   Widget build(BuildContext context) {
@@ -28,7 +34,11 @@ class ElevatedButtonsComponent extends StatelessWidget {
       height: context.screenHeight(height: buttonHeight),
       child: ElevatedButton(
         onPressed: onPressed,
-        child: TranslationText(text: buttonTitle),
+        child: TranslationText(
+          text: buttonTitle,
+          style: TextStyle(
+              color: textColor, fontSize: fontSize, fontWeight: fontWeight),
+        ),
         style: ButtonStyle(
             backgroundColor: MaterialStateProperty.all<Color>(
                 backgroundColor ?? Color(0XFF64cccd)),

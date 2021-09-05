@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:shortly_flutter/app/global/components/appbar_components.dart';
-import 'package:shortly_flutter/app/global/helpers/padding_helpers.dart';
-import 'package:shortly_flutter/app/global/helpers/svg_pictures_helpers.dart';
-import 'package:shortly_flutter/core/localization/widget/locale_text_widget.dart';
+
+import '../../../../core/localization/widget/locale_text_widget.dart';
+import '../../../global/helpers/svg_pictures_helpers.dart';
 
 class URLShortScreen extends StatelessWidget {
   const URLShortScreen({Key? key}) : super(key: key);

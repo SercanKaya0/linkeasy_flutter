@@ -15,10 +15,16 @@
   } , 
   "home" : {
     "bottom_textfield_hint_text" : "Shorten a link here ...",
-    "bottom_shorten_it_button_text" : "SHORTEN IT!"
+    "bottom_shorten_it_button_text" : "SHORTEN IT!",
+    "empty_textfield_hint_text" : "Please add a link here"
   }, 
   "url_short" : {
     "title" : "Let's get started!",
     "description" : "Paste your first link into the field to shorten it"
+
+  },
+  "url_short_history" : {
+    "copy_button" : "COPY",
+    "copied_button" : "COPY"
   }
 }

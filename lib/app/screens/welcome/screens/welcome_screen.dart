@@ -1,14 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:shortly_flutter/app/global/components/appbar_components.dart';
-import 'package:shortly_flutter/app/global/components/elevated_button_components.dart';
-import 'package:shortly_flutter/app/global/helpers/spacer_flex_helper.dart';
-import 'package:shortly_flutter/app/global/helpers/svg_pictures_helpers.dart';
-import 'package:shortly_flutter/app/global/routes/routes.dart';
-import 'package:shortly_flutter/core/localization/widget/locale_text_widget.dart';
-import 'package:shortly_flutter/core/navigation/navigation_helper.dart';
 
-import '../../../global/components/app_logo_image_components.dart';
+import '../../../../core/localization/widget/locale_text_widget.dart';
+import '../../../../core/navigation/navigation_helper.dart';
+import '../../../global/components/appbar_components.dart';
+import '../../../global/components/elevated_button_components.dart';
 import '../../../global/helpers/padding_helpers.dart';
+import '../../../global/helpers/svg_pictures_helpers.dart';
+import '../../../global/routes/routes.dart';
 
 class WelcomeScreen extends StatelessWidget {
   const WelcomeScreen({Key? key}) : super(key: key);

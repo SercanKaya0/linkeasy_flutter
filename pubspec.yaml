@@ -34,6 +34,15 @@ dependencies:
   mobx: ^2.0.3
   flutter_mobx: ^2.0.1
   get_it: ^6.0.0-nullsafety.2
+  #NETWORK
+  json_annotation: ^4.0.1
+  json_serializable: ^4.1.0
+  dio: ^4.0.0
+  freezed_annotation: ^0.14.1
+  freezed: ^0.14.1+1
+  connectivity: ^3.0.6
+  hive: ^2.0.4
+  hive_flutter: ^1.1.0
 
 dev_dependencies:
   flutter_test:

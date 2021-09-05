@@ -1,5 +1,6 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
+import 'package:shortly_flutter/core/hive/hive_helper.dart';
 
 import 'app/global/get_it/get_it.dart';
 import 'core/localization/helper/translation_helper.dart';
@@ -11,7 +12,9 @@ void main() async {
   await TranstlationsHelper.instance.translationsInitialize();
   // * Dependcy Injection -> Get it Paketi
   setupGetIt();
-  
+  // * Phone Local Repository Initialize -> Hive Package
+  await HiveHelper.instance.initHiveFlutter();
+
   runApp(EasyLocalization(
       child: MyApp(),
       supportedLocales: TranstlationsHelper.instance.supoortedLocales,
