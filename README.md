@@ -17,20 +17,26 @@ flutter pub get
 ```
 
 ## Usage -> Core
+
+
 ```bash
-
 ## Localiztaion
-
  'It is a file that can be moved to the folder of the desired application and localized. The easy_localization package is used, and after the necessary settings are made, it is sufficient to wrap the text to be translated with the widget in the folder.'
 
 Example:
   TranslationText(text: "home.title"),
+```
+
+```bash
 ## navigation
 Navigasyon işlemlerini kolay hale getiren ve uygulama farketmeksizin kullanılabilen core dosyasıdır. 
 
 Example :
        Navigation.pushNamed(root: Routes.onboard);
+```
 
+
+```bash
 ## platform_design
 
 'It is the build that runs the builder based on the platform type.'
@@ -70,14 +76,20 @@ class PlatformSensitiveMain extends PlatformSensitiveWidget {
       home: WelcomeScreen(),
     );
   }
+```
+```bash
 ## screen_size
 It has an extension written to Buildcontext that measures screen width and height.
 if you leave height blank it will multiply the width of the screen by 1
 Example:
 context.screenHeight(height: buttonHeight),
-
-
 ```
+
+
+
+
+
+
 
 ## Usage -> Routes
 ```bash
