@@ -1,11 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:shortly_flutter/app/theme/style/button_style/button_style_theme_light.dart';
+import 'package:shortly_flutter/app/theme/style/theme_data/input_decoration/input_decoration_theme_light.dart';
 
 import '../model/colors/colors_model.dart';
 import '../style/text_style/text_style_theme_light.dart';
 
 extension LightTheme on BuildContext {
   ThemeData get lightTheme => ThemeData(
+        inputDecorationTheme:
+            InputDecorationThemeLight.instance.inputDecorationTheme,
         appBarTheme: AppBarTheme(
             elevation: 0,
             centerTitle: true,

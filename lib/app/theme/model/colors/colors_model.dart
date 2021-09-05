@@ -16,8 +16,8 @@ class ThemeColorsModel {
   final Color floatingActionButtonColorLIGHT = Colors.white;
 
   // * TEXTFİELD
-  final Color textFieldBackgroundColorDARK = Color(0XFF3b3d4a).withOpacity(0.4);
-  final Color textFieldBackgroundColorLIGHT = Colors.grey.withOpacity(0.1);
+  final Color textFieldBackgroundColorDARK = Colors.white;
+  final Color textFieldBackgroundColorLIGHT = Colors.white;
 
 // * TEXTBUTTON
   final Color textButtonForegroundColorDARK = Colors.blue;

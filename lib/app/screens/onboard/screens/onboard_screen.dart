@@ -22,9 +22,8 @@ class OnboardScreen extends StatelessWidget {
         padding: PaddingHelpers.instance.horizontal24Vertical30Padding,
         child: Column(
           children: [
+            Expanded(flex: 20, child: _getPageViewBuilder()),
             Spacer(flex: 5),
-            Flexible(flex: 10, child: _getPageViewBuilder()),
-            Spacer(flex: 10),
             Flexible(flex: 1, child: _getPageViewBuilderIndicator()),
             // * Skip Buttons
             Expanded(flex: 2, child: _getSkipButtonMethod()),
@@ -38,7 +37,7 @@ class OnboardScreen extends StatelessWidget {
   Widget _getSkipButtonMethod() => TextButtonComponent(
       buttonTitle: "onboard.skip_button_text",
       onPressed: () {
-        Navigation.pushNamed(root: Routes.url_shorter);
+        Navigation.pushNamed(root: Routes.home_screen);
       });
 // * PageView Circle Indicator.
   Widget _getPageViewBuilderIndicator() => ListView.builder(
@@ -57,17 +56,23 @@ class OnboardScreen extends StatelessWidget {
         itemBuilder: (context, index) {
           // * Ekranda gösterilen resim,title ve açıklamaların bulunduğu widget.
           // * Değerler onbobarviewmodel da bulunan listeden çekilip widget'a aktarılır.
-          return OnboardPageViewBuilderCellWidget(
-            iconData: _onboardViewModel.onboardPageBuilderList[index].image,
-            title: _onboardViewModel.onboardPageBuilderList[index].title,
-            description:
-                _onboardViewModel.onboardPageBuilderList[index].description,
+          return Center(
+            child: Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 5),
+              child: OnboardPageViewBuilderCellWidget(
+                iconData: _onboardViewModel.onboardPageBuilderList[index].image,
+                title: _onboardViewModel.onboardPageBuilderList[index].title,
+                description:
+                    _onboardViewModel.onboardPageBuilderList[index].description,
+              ),
+            ),
           );
         },
+
         itemCount: _onboardViewModel.onboardPageBuilderList.length,
+
         // * Sayfa değiştikçe viewmodelda bulunan current index geçerli indexe eşitlenir.
         onPageChanged: (index) => _onboardViewModel.currentIndex = index,
         scrollDirection: Axis.horizontal,
-        clipBehavior: Clip.none,
       );
 }

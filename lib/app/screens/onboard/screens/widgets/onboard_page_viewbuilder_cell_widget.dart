@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:shortly_flutter/app/global/components/circle_image_components.dart';
 import 'package:shortly_flutter/core/localization/widget/locale_text_widget.dart';
+import 'package:shortly_flutter/core/screen_size/screen_size_helper.dart';
 
 class OnboardPageViewBuilderCellWidget extends StatelessWidget {
   const OnboardPageViewBuilderCellWidget({
@@ -21,11 +22,11 @@ class OnboardPageViewBuilderCellWidget extends StatelessWidget {
       children: [
         Container(
           padding: EdgeInsets.all(20),
+          height: context.screenHeight(height: 0.32),
           decoration: BoxDecoration(
               color: Colors.white, borderRadius: BorderRadius.circular(20)),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.end,
-            crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               Flexible(
                 flex: 1,

@@ -3,5 +3,5 @@ import 'package:shortly_flutter/app/global/components/app_logo_image_components.
 
 class AppBarComponents {
   static PreferredSizeWidget appBarWidget() =>
-      AppBar(title: AppLogoComponents());
+      AppBar(title: AppLogoComponents(), automaticallyImplyLeading: false);
 }

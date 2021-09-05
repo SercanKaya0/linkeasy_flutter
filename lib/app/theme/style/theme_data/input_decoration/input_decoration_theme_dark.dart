@@ -7,16 +7,17 @@ class InputDecorationThemeDark {
   final InputDecorationTheme? inputDecorationTheme = InputDecorationTheme(
     fillColor: ThemeColorsModel.instance.textFieldBackgroundColorDARK,
     border: OutlineInputBorder(
-        borderRadius: BorderRadius.circular(10), borderSide: BorderSide.none),
+        borderRadius: BorderRadius.circular(5), borderSide: BorderSide.none),
     errorBorder: OutlineInputBorder(
-        borderRadius: BorderRadius.circular(10), borderSide: BorderSide.none),
+        borderRadius: BorderRadius.circular(5),
+        borderSide: BorderSide(color: Colors.red)),
     enabledBorder: OutlineInputBorder(
-        borderRadius: BorderRadius.circular(10), borderSide: BorderSide.none),
+        borderRadius: BorderRadius.circular(5), borderSide: BorderSide.none),
     focusedBorder: OutlineInputBorder(
-        borderRadius: BorderRadius.circular(10), borderSide: BorderSide.none),
+        borderRadius: BorderRadius.circular(5), borderSide: BorderSide.none),
     disabledBorder: OutlineInputBorder(
-        borderRadius: BorderRadius.circular(10), borderSide: BorderSide.none),
+        borderRadius: BorderRadius.circular(5), borderSide: BorderSide.none),
     focusedErrorBorder: OutlineInputBorder(
-        borderRadius: BorderRadius.circular(10), borderSide: BorderSide.none),
+        borderRadius: BorderRadius.circular(5), borderSide: BorderSide.none),
   );
 }
