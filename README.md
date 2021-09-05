@@ -1,6 +1,9 @@
 # Shortly Flutter 
 
+
+
 ## Specification
+- Flutter null safety
 - Dark Mode
 - Multi Language
 - Responsive 
@@ -10,6 +13,7 @@
 - Dependcy Injections - Get It
 - Scalable Code 
 - State Management -> Mobx
+- Local Storage -> Mobx
 
 ## installation 
 ```bash
@@ -86,11 +90,6 @@ context.screenHeight(height: buttonHeight),
 ```
 
 
-
-
-
-
-
 ## Usage -> Routes
 ```bash
 class Routes {
@@ -114,4 +113,8 @@ class Routes {
   }
 }
 ```
+
+
+
+
 
