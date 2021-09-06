@@ -19,14 +19,15 @@ class OnboardScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBarComponents.appBarWidget(),
       body: Container(
-        padding: PaddingHelpers.instance.horizontal24Vertical30Padding,
+        padding: PaddingHelpers.instance.horizontal24x,
         child: Column(
           children: [
             Expanded(flex: 20, child: _getPageViewBuilder()),
-            Spacer(flex: 5),
+            Spacer(flex: 1),
             Flexible(flex: 1, child: _getPageViewBuilderIndicator()),
             // * Skip Buttons
             Expanded(flex: 2, child: _getSkipButtonMethod()),
+            Spacer(flex: 1),
           ],
         ),
       ),
@@ -60,7 +61,8 @@ class OnboardScreen extends StatelessWidget {
             child: Padding(
               padding: const EdgeInsets.symmetric(horizontal: 5),
               child: OnboardPageViewBuilderCellWidget(
-                iconData: _onboardViewModel.onboardPageBuilderList[index].image,
+                imageName:
+                    _onboardViewModel.onboardPageBuilderList[index].imageName,
                 title: _onboardViewModel.onboardPageBuilderList[index].title,
                 description:
                     _onboardViewModel.onboardPageBuilderList[index].description,

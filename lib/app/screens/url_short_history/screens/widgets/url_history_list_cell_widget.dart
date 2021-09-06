@@ -11,7 +11,7 @@ class URLHistoryListViewCell extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return CupertinoFormRow(
-      padding: EdgeInsets.symmetric(horizontal: 20),
+      padding: EdgeInsets.symmetric(horizontal: 30),
       child: Row(
         children: [
           Expanded(flex: 90, child: Text(urlLink!)),

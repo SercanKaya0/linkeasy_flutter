@@ -24,7 +24,7 @@
         "description": "Paste your first link into the field to shorten it"
     },
     "url_short_history": {
-        "copy_button": "COPY",
-        "copied_button": "COPY"
+        "share_button": "Share",
+        "head_title": "Your History Link"
     }
 }

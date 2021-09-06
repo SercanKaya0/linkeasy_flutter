@@ -34,7 +34,7 @@ class HomePageScreens extends StatelessWidget {
           Expanded(
             flex: 90,
             child: Container(
-              padding: PaddingHelpers.instance.horizontal24Vertical30Padding,
+              padding: PaddingHelpers.instance.horizontal24x,
               child: Observer(builder: (_) {
                 return Stack(
                   alignment: Alignment.center,
@@ -49,7 +49,7 @@ class HomePageScreens extends StatelessWidget {
             ),
           ),
           Expanded(
-            flex: 30,
+            flex: 25,
             child: ScaffoldBottomBarWidget(),
           ),
         ],

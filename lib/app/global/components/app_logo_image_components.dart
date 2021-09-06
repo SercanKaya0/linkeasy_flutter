@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '../helpers/svg_pictures_helpers.dart';
-
+import '../../../core/images/images_helper.dart';
+import '../../../core/screen_size/screen_size_helper.dart';
 
 // * Uygulama boyunca gösterilen logonun geldiği widgettır.
 class AppLogoComponents extends StatelessWidget {
@@ -10,6 +10,7 @@ class AppLogoComponents extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // * Assets -> images dosyasında logo.svg resmini çeker.
-    return SVGPicturesHelper.getSVGPictureAssets(svgName: "logo");
+    return ImagesHelper.getAssetImage(
+        imageName: "app-logo", width: context.screenWidht(width: 0.6));
   }
 }

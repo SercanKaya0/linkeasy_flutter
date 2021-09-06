@@ -10,7 +10,7 @@ class CircularProgressIndicatorComponent extends StatelessWidget {
   Widget build(BuildContext context) {
     return CircularProgressIndicator(
       valueColor:
-          AlwaysStoppedAnimation<Color>(indicatorColor ?? Color(0XFF64cccd)),
+          AlwaysStoppedAnimation<Color>(indicatorColor ?? Color(0XFFff0044)),
     );
   }
 }

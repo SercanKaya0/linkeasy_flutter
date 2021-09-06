@@ -18,41 +18,6 @@ mixin _$URLHistoryViewModel on _URLHistoryViewModelBase, Store {
         .run(() => super.deleteURLHistoryHive(index));
   }
 
-  final _$setUpdateCopiedButtonAsyncAction =
-      AsyncAction('_URLHistoryViewModelBase.setUpdateCopiedButton');
-
-  @override
-  Future<void> setUpdateCopiedButton(int index,
-      {required URLHistoryHiveModel data}) {
-    return _$setUpdateCopiedButtonAsyncAction
-        .run(() => super.setUpdateCopiedButton(index, data: data));
-  }
-
-  final _$_URLHistoryViewModelBaseActionController =
-      ActionController(name: '_URLHistoryViewModelBase');
-
-  @override
-  Color? copyButtonBackgroundColorControl(bool isCopied) {
-    final _$actionInfo = _$_URLHistoryViewModelBaseActionController.startAction(
-        name: '_URLHistoryViewModelBase.copyButtonBackgroundColorControl');
-    try {
-      return super.copyButtonBackgroundColorControl(isCopied);
-    } finally {
-      _$_URLHistoryViewModelBaseActionController.endAction(_$actionInfo);
-    }
-  }
-
-  @override
-  String copyButtonTitleControl(bool isCopied) {
-    final _$actionInfo = _$_URLHistoryViewModelBaseActionController.startAction(
-        name: '_URLHistoryViewModelBase.copyButtonTitleControl');
-    try {
-      return super.copyButtonTitleControl(isCopied);
-    } finally {
-      _$_URLHistoryViewModelBaseActionController.endAction(_$actionInfo);
-    }
-  }
-
   @override
   String toString() {
     return '''

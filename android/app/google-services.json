@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "126021049636",
+    "project_id": "linkeasy-52706",
+    "storage_bucket": "linkeasy-52706.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:126021049636:android:649cd1545d43cc19f667b1",
+        "android_client_info": {
+          "package_name": "com.linkeasy.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "126021049636-83332ni48d57jkd6lq6nn9vvgrpdafhq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.linkeasy.app",
+            "certificate_hash": "20921c552f5852e3a40b337b2dddb4b598410b67"
+          }
+        },
+        {
+          "client_id": "126021049636-st4j0hav9r7bolessfkijp3la26id0sb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB-E9R-8Bswt4aKVGLziDjUNIQCTRFzD-A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "126021049636-st4j0hav9r7bolessfkijp3la26id0sb.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "126021049636-nl037q4etqv4rs8fndfu6o3gqd4ct9hd.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.linkeasy.app"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

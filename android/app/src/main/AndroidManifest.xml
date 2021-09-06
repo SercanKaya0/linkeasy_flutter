@@ -1,8 +1,13 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.shortly_flutter">
+    package="com.linkeasy.app">
+    <uses-permission android:name="android.permission.INTERNET"/>
    <application
-        android:label="shortly_flutter"
+        android:label="LinkEasy"
         android:icon="@mipmap/ic_launcher">
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-8731817664363616~2539441075"/>
+        
         <activity
             android:name=".MainActivity"
             android:launchMode="singleTop"
@@ -18,6 +23,7 @@
               android:name="io.flutter.embedding.android.NormalTheme"
               android:resource="@style/NormalTheme"
               />
+               
             <!-- Displays an Android View that continues showing the launch screen
                  Drawable until Flutter paints its first frame, then this splash
                  screen fades out. A splash screen is useful to avoid any visual

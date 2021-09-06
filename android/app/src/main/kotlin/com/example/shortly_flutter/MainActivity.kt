@@ -1,4 +1,4 @@
-package com.example.shortly_flutter
+package com.linkeasy.app
 
 import io.flutter.embedding.android.FlutterActivity
 

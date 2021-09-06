@@ -41,7 +41,7 @@ class ElevatedButtonsComponent extends StatelessWidget {
         ),
         style: ButtonStyle(
             backgroundColor: MaterialStateProperty.all<Color>(
-                backgroundColor ?? Color(0XFF64cccd)),
+                backgroundColor ?? Color(0XFFff0044)),
             side: side),
       ),
     );

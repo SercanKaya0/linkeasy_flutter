@@ -74,11 +74,12 @@ class _ScaffoldBottomBarWidgetState extends State<ScaffoldBottomBarWidget> {
               fontSize: 20,
               fontWeight: FontWeight.bold,
               textColor: Colors.white,
-              backgroundColor: Color(0XFF64cccd),
+              backgroundColor: Color(0XFFff0044).withOpacity(0.4),
               buttonTitle: "home.bottom_shorten_it_button_text",
               onPressed: () async {
                 if (_homeScreenViewModel.textEditingController.text != "") {
-                  await _urlShortenModel.urlShortenPost(_homeScreenViewModel.textEditingController.text);
+                  await _urlShortenModel.urlShortenPost(
+                      _homeScreenViewModel.textEditingController.text);
                 } else {
                   _homeScreenViewModel.isValidator = true;
                 }

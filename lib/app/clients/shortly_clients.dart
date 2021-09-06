@@ -10,6 +10,7 @@ part 'shortly_clients.freezed.dart';
 @freezed
 class ShortlyClients extends BaseClientGenerator with _$ShortlyClients {
   const ShortlyClients._() : super();
+
   const factory ShortlyClients.posts({Map<String, dynamic>? queryParameters}) =
       _Posts;
 
@@ -20,7 +21,9 @@ class ShortlyClients extends BaseClientGenerator with _$ShortlyClients {
 // * Eğer bodu gönderilecekse buradan ayarlanır. Aksi belirtilmez ise null olur.
   @override
   Map<String, dynamic>? get body {
-    return this.maybeWhen(orElse: () => null);
+    return this.maybeWhen(
+        orElse: () => null,
+        posts: (queryParameters) => {"" : ""});
   }
 
 // * header alanı buradan ayarlanır.

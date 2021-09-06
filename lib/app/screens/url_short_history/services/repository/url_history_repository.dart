@@ -10,10 +10,4 @@ class URLHistoryRepository extends IURLHistoryRepository {
         .deleteAt(index);
   }
 
-  @override
-  Future<void> isCopiedButtonControlHiveUpdate(int index,
-      {required URLHistoryHiveModel data}) async {
-    await Hive.box<URLHistoryHiveModel>(HiveHelper.instance.urlHistory)
-        .putAt(index, data);
-  }
 }

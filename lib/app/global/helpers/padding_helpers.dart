@@ -4,6 +4,5 @@ import 'package:flutter/material.dart';
 
 class PaddingHelpers {
   static final PaddingHelpers instance = PaddingHelpers();
-  EdgeInsetsGeometry get horizontal24Vertical30Padding =>
-      EdgeInsets.symmetric(horizontal: 24, vertical: 30);
+  EdgeInsetsGeometry get horizontal24x => EdgeInsets.symmetric(horizontal: 24);
 }

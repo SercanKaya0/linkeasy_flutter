@@ -1,12 +1,11 @@
 import 'package:dio/dio.dart';
-import 'package:hive/hive.dart';
-import 'package:shortly_flutter/app/screens/url_short_history/model/url_history_hive_model.dart';
-import 'package:shortly_flutter/core/hive/hive_helper.dart';
 
+import '../../../../../core/hive/hive_helper.dart';
 import '../../../../../core/network/freezed/network_error.dart';
 import '../../../../../core/network/freezed/result.dart';
 import '../../../../../core/network/layers/network_executer.dart';
 import '../../../../clients/shortly_clients.dart';
+import '../../../url_short_history/model/url_history_hive_model.dart';
 import '../../model/url_shorten_model.dart';
 import '../interface/i_urlshort_repository.dart';
 

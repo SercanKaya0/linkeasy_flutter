@@ -1,29 +1,29 @@
 {
   "welcome": {
-    "title": "More than just shorter links",
-    "description": "Build your brand's recognition and get detailed insights on how your links are performing",
-    "button_start_title": "START"
+    "title": "Kısa bağlantıdan daha fazlası",
+    "description": "Uzun bağlantılarınızı kısaltarak müşterilerinizle ve ya arkadaşlarınızla paylaşın",
+    "button_start_title": "BAŞLA"
   },
   "onboard": {
-    "skip_button_text": "Skip",
-    "title_1": "Brand Recognation",
-    "title_2": "Detailed Records",
-    "title_3": "Fully Customizable",
-    "description_1": "Boos your brand recognition with each click. Genereci links don't mean a thing. Branded links help instil confidence in your content.",
-    "description_2": "Gain insights into who is clicking your links. Knowing when and where people engage with your content helps inform better decisions",
-    "description_3": "Improve brand awareness and content discoverability through customizable links, supercharging audience engagement"
+    "skip_button_text": "Geç",
+    "title_1": "Hızlı",
+    "title_2": "Geçmiş Kısaltmalar",
+    "title_3": "Paylaş",
+    "description_1": "Kısaltmanız gereken uzun bir url adresiniz mi var ? Vakit kaybetmeden hızlı bir şekilde kısalt.",
+    "description_2": "Daha önce kısaltmış olduğun url adreslerini kolayca yönet.",
+    "description_3": "Kısalttığın url adresini arkadaşların ile kolayca paylaş"
   },
   "home": {
-    "bottom_textfield_hint_text": "Shorten a link here ...",
-    "bottom_shorten_it_button_text": "SHORTEN IT!",
-    "empty_textfield_hint_text": "Please add a link here"
+    "bottom_textfield_hint_text": "Kısaltılacak bağlantı ...",
+    "bottom_shorten_it_button_text": "Bağlantıyı Kısalt",
+    "empty_textfield_hint_text": "Lütfen bir url giriniz ..."
   },
   "url_short": {
-    "title": "Let's get started!",
-    "description": "Paste your first link into the field to shorten it"
+    "title": "Haydi Başlayalım!",
+    "description": "Kısaltmak istediğiniz bağlantıyı aşağıya yapıştırın."
   },
   "url_short_history": {
-    "copy_button": "COPY",
-    "copied_button": "COPIED!"
+    "share_button": "Paylaş",
+    "head_title" : "Bağlantı Kısaltma Geçmişin"
   }
 }

@@ -1,6 +1,7 @@
-import 'package:flutter/material.dart';
 import 'package:mobx/mobx.dart';
-import 'package:shortly_flutter/app/screens/onboard/model/onboard_screen_model.dart';
+
+import '../model/onboard_screen_model.dart';
+
 part 'onboard_viewmodel.g.dart';
 
 class OnboardViewModel = _OnboardViewModelBase with _$OnboardViewModel;
@@ -15,14 +16,14 @@ abstract class _OnboardViewModelBase with Store {
     OnboardScreenModel(
         title: "onboard.title_1",
         description: "onboard.description_1",
-        image: Icons.brush),
+        imageName: "onboard_image_1"),
     OnboardScreenModel(
         title: "onboard.title_2",
         description: "onboard.description_2",
-        image: Icons.brush),
+        imageName: "onboard_image_2"),
     OnboardScreenModel(
         title: "onboard.title_3",
         description: "onboard.description_3",
-        image: Icons.brush),
+        imageName: "onboard_image_3"),
   ];
 }
