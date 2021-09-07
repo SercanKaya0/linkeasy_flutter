@@ -30,12 +30,7 @@ void main() async {
   // * Firabase Notification background Handle
   FirebaseMessaging.onBackgroundMessage(firebaseMessagingBackgroundHandler);
   // * google admob initialize
-  await AdmobHelper.instance.googleAdmobInitialize();
-  // * google admob shot interstital
 
-  await AdmobHelper.instance.showAdmobInterstitial(
-      adUnitId: AdmobHelper.instance.admobMobileID,
-      onAdFailedToLoad: (e) {});
 
   runApp(EasyLocalization(
       child: PlatformSensitiveMain(),

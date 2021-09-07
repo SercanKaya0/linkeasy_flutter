@@ -15,8 +15,8 @@ class AdmobHelper {
   // * Admob id'leri buradan gelir.
   String get admobMobileID =>
       AdmobUtilsHelper.instance.platformSensitiveAdmobID(
-          androidAdmobID: "ca-app-pub-8731817664363616/5991600920",
-          iosAdmobID: "ca-app-pub-8731817664363616/7496254285");
+          androidAdmobID: "ca-app-pub-TEXT",
+          iosAdmobID: "ca-app-pub-TEXT");
 
   // * Admob işlemlerini dinleyen fonksiyon
 
